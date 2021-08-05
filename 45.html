@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10개 색상 추천하는 프로그램</title>
+</head>
+<body id="bg">
+    <script>
+        let randomNum = Math.random();
+        let num = Math.ceil(randomNum*10);
+        let color
+        console.log(typeof color);
+        switch(num){
+            case 1: color = "red"; break;
+            case 2: color = "blue"; break;
+            case 3: color = "orange"; break;
+            case 4: color = "yellow"; break;
+            case 5: color = "green"; break;
+            case 6: color = "tomato"; break;
+            case 7: color = "skyblue"; break;
+            case 8: color = "pink"; break;
+            case 9: color = "white"; break;
+            case 10: color = "brown"; break;
+        }
+        document.write("오늘의 추천 색상은<br>"+color+" 입니다.");
+
+        document.getElementById('bg').style.backgroundColor = (color);
+    </script>
+</body>
+</html>
